@@ -1,11 +1,8 @@
 fn main(){
     println!("Function Calling");
     println!("{}",is_even(41));
-    println!("{}",get_fibonacii_of_num(3));
-    let my_sentence = String :: from("OM SHARMA LEARNING RUST!");
-    let length:usize = get_string_length(&my_sentence);
-    println!("Length {}",length);
-}   
+    println!("{}",get_fibonacii_of_num(35));
+}
 
 fn is_even(num : i32) -> bool{
     if num%2 == 0 {
@@ -28,7 +25,7 @@ fn get_fibonacii_of_num(num:i32) -> i32{
         return 1;
     }
 
-    for _ in 0..num - 1{
+    for i in 1..num - 2{
         let temp = second;
         second = second+first;
         first = temp;
@@ -37,9 +34,4 @@ fn get_fibonacii_of_num(num:i32) -> i32{
     return second;
     
 
-}
-
-
-fn get_string_length(sentence : &str) -> usize{
-    sentence.chars().count()
 }
