@@ -1,3 +1,11 @@
+struct User{
+    first_name : String,
+    last_name : String,
+    age : u32
+}
+
+
+
 fn main(){
     println!("Function Calling");
     println!("{}",is_even(41));
@@ -5,6 +13,17 @@ fn main(){
     let my_sentence = String :: from("OM SHARMA LEARNING RUST!");
     let length:usize = get_string_length(&my_sentence);
     println!("Length {}",length);
+
+    // struct stuff.
+    let user_1 = User{
+        first_name : String :: from("Om") ,
+        last_name : String :: from("Sharma"),
+        age : 21
+    };
+    println!("user_1 first name : {} ",user_1.first_name);
+    println!("user_1 last name : {} ",user_1.last_name);
+    println!("user_1 age is : {} ",user_1.age);
+
 }   
 
 fn is_even(num : i32) -> bool{
