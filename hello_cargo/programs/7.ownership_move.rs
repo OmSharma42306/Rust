@@ -25,3 +25,24 @@ fn main(){
 fn print_string(sentence:String){
     println!("{}",sentence);
 }
+
+
+// another example : 
+
+
+// fn main(){
+    
+//     let s1 = String::from("Om Sharma");
+    
+//     print_string(s1);
+//     // so below s1 gives an error because when print_string function called
+//     // we send the s1 variable value to print_string function so there s3 is 
+//     // a new variable that assigned to that value so the value is moved...so below giving an error...
+//     println!("{}",s1);
+
+// }
+
+// fn print_string(sentence:String){
+//     println!("{}",sentence);
+// }
+
